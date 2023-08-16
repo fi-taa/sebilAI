@@ -127,7 +127,7 @@ function NumberForm(props) {
         <input type="number" name="K" value={inputValues.K} onChange={handleInputChange} />
       </label>
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit">Recommend</button>
     </form>
   );
 }
