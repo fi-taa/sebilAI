@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+
+function NumberForm() {
+  const [inputValues, setInputValues] = useState({
+    N: '',
+    P: '',
+    K: '',
+    temprature: '',
+    humidity: '',
+    rainfall: '',
+    ph: ''
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setInputValues({
+      ...inputValues,
+      [name]: value
+    });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    
+
+    console.log(inputValues);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Number 1:
+        <input type="number" name="N" value={inputValues.N} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 2:
+        <input type="number" name="P" value={inputValues.P} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 3:
+        <input type="number" name="K" value={inputValues.K} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 4:
+        <input type="number" name="temprature" value={inputValues.temprature} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 5:
+        <input type="number" name="humidity" value={inputValues.humidity} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 6:
+        <input type="number" name="rainfall" value={inputValues.rainfall} onChange={handleInputChange} />
+      </label>
+      <br />
+      <label>
+        Number 7:
+        <input type="number" name="ph" value={inputValues.ph} onChange={handleInputChange} />
+      </label>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default NumberForm;
