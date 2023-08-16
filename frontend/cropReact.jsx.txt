@@ -1,10 +1,45 @@
-import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
 
-function NumberForm() {
+        <Route path="/" exact component={NumberForm} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </div>
+    </Router>
+  );
+}
+function About() {
+  return <h2>About</h2>;
+}
+
+function Contact() {
+  return <h2>Contact</h2>;
+}
+function About() {
+  return <h2>About</h2>;
+}
+
+function Contact() {
+  return <h2>Contact</h2>;
+}function NumberForm(props) {
   const [inputValues, setInputValues] = useState({
-    N: '',
-    P: '',
-    K: '',
+    
     temprature: '',
     humidity: '',
     rainfall: '',
@@ -22,45 +57,29 @@ function NumberForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    
-
     console.log(inputValues);
   }
 
   return (
     <form onSubmit={handleSubmit}>
+     
       <label>
         Number 1:
-        <input type="number" name="N" value={inputValues.N} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        Number 2:
-        <input type="number" name="P" value={inputValues.P} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        Number 3:
-        <input type="number" name="K" value={inputValues.K} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        Number 4:
         <input type="number" name="temprature" value={inputValues.temprature} onChange={handleInputChange} />
       </label>
       <br />
       <label>
-        Number 5:
+        Number 2:
         <input type="number" name="humidity" value={inputValues.humidity} onChange={handleInputChange} />
       </label>
       <br />
       <label>
-        Number 6:
+        Number 3:
         <input type="number" name="rainfall" value={inputValues.rainfall} onChange={handleInputChange} />
       </label>
       <br />
       <label>
-        Number 7:
+        Number 4:
         <input type="number" name="ph" value={inputValues.ph} onChange={handleInputChange} />
       </label>
       <br />
@@ -68,5 +87,4 @@ function NumberForm() {
     </form>
   );
 }
-
-export default NumberForm;
+export default App;
