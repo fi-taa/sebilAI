@@ -41,9 +41,7 @@ function NumberForm(props) {
     humidity: '',
     rainfall: '',
     ph: '',
-    N: '',
-    P: '',
-    K: ''
+  
   });
 
   const handleInputChange = (event) => {
@@ -110,21 +108,6 @@ function NumberForm(props) {
       <label>
         pH:
         <input type="number" name="ph" value={inputValues.ph} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        N:
-        <input type="number" name="N" value={inputValues.N} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        P:
-        <input type="number" name="P" value={inputValues.P} onChange={handleInputChange} />
-      </label>
-      <br />
-      <label>
-        K:
-        <input type="number" name="K" value={inputValues.K} onChange={handleInputChange} />
       </label>
       <br />
       <button type="submit">Recommend</button>
