@@ -1,5 +1,5 @@
 import React from 'react'; 
-import profilePicture from './Sebil.jpg'; 
+import profilePicture from './Sebil.jfif'; 
  
 const AboutPage = () => { 
   return ( 
