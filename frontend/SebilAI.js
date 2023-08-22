@@ -20,8 +20,8 @@ function App() {
         </nav> 
  
         <Route path="/" exact component={NumberForm} /> 
-        <Route path="/about" component={About} /> 
-        <Route path="/contact" component={Contact} /> 
+        <Route path="/about.js" component={About} /> 
+        <Route path="/contact.js" component={Contact} /> 
       </div> 
     </Router> 
   ); 
