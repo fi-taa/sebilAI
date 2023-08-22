@@ -13,7 +13,7 @@ function ContactForm() {
  
   return ( 
     <div> 
-      <img src="SebilAI.jpg" alt="Sebil AI" /> 
+      <img src="SebilAI.jfif" alt="Sebil AI" /> 
       <h1>You can freely share your comment or any idea on Sebil AI</h1> 
       <form onSubmit={handleSubmit}> 
         <label> 
