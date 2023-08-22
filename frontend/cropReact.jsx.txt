@@ -11,10 +11,10 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="about.js">About</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="contact.js">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -55,13 +55,13 @@ function NumberForm(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Check if all required fields are filled in
+    
     if (!inputValues.N || !inputValues.P || !inputValues.K) {
       alert('Please fill in all required fields');
       return;
     }
 
-    // Validate specific fields based on data type or range
+  
     if (inputValues.temprature < -50 || inputValues.temprature > 50) {
       alert('Please enter a valid temperature (-50 to 50)');
       return;
@@ -82,7 +82,7 @@ function NumberForm(props) {
       return;
     }
 
-    // If all validation passes, submit the form
+    
     console.log(inputValues);
     alert('Form submitted successfully!');
   }
