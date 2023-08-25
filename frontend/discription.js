@@ -1,0 +1,19 @@
+const crops = {
+  maize: "Maize, also known as corn, is a versatile cereal grain that is widely cultivated for various purposes. It comes in different varieties, including sweet corn and dent corn. Maize has a growth period of around 60-100 days and is known for its high carbohydrate content.",
+  mango: "Mango is a tropical fruit known for its sweet and juicy flavor. It comes in various varieties such as Alphonso, Kent, and Tommy Atkins. Mango trees typically take around 4-6 years to fully mature and bear fruit.",
+  millet: "Millet refers to a group of small-seeded grasses that are cultivated as cereal crops. It includes varieties like pearl millet and finger millet. Millet is known for its drought tolerance and high nutritional value.",
+  mothBeans: "MothBeans, also known as matki or moth, are a type of legume that is commonly grown in arid and semi-arid regions. They have a growth period of around 70-85 days and are known for their high protein content.",
+  mungBeans: "MungBeans, also known as green gram or black gram, are a type of legume widely cultivated for their edible seeds. They have a growth period of around 60-90 days and are known for their rich protein content.",
+  muskmelon: "Muskmelon, also known as cantaloupe or honeydew, is a type of melon with a sweet aroma and refreshing taste. It typically takes around 70-90 days to mature.",
+  orange: "Oranges are citrus fruits known for their juicy pulp and high vitamin C content. They come in various varieties such as Navel and Valencia. Orange trees take around 6-8 years to mature and produce fruit.",
+  papaya: "Papaya is a tropical fruit known for its sweet flavor and digestive enzyme content. It typically takes around 9-12 months for a papaya tree to bear fruit.",
+  peas: "Peas are a type of legume known for their edible seeds enclosed in pods. They come in various varieties such as green peas and snow peas. Peas have a growth period of around 60-90 days and are known for their high fiber and protein content.",
+  pigeonPeas: "PigeonPeas, also known as Arhar or Toor, are a type of legume widely cultivated for their edible seeds. They have a longer growth period of around 150-180 days and are known for their nitrogen-fixing properties.",
+  rice: "Rice is a staple food crop and one of the most widely consumed grains globally. It comes in different varieties such as basmati and jasmine. Rice typically has a growth period of around 3-6 months and is known for its high carbohydrate content.",
+  rubber: "Rubber refers to the latex produced by the rubber tree (Hevea brasiliensis). It is primarily cultivated for its use in various industries, including the production of tires and rubber products. Rubber trees take around 7-10 years to mature and start producing latex.",
+  sugarcane: "Sugarcane is a tall perennial grass known for its high sugar content. It is primarily cultivated for sugar and ethanol production. Sugarcane plants typically have a growth period of around 12-18 months.",
+  tea: "Tea is an aromatic beverage made from the leaves of the Camellia sinensis plant. It comes in various varieties such as Assam and Darjeeling. Tea plants usually take around 3-5 years to mature and are known for their caffeine content.",
+  tobacco: "Tobacco is a plant cultivated for its leaves, which are used for smoking, chewing, or as an ingredient in various tobacco products. It has a relatively short growth period of around 3-4 months.",
+  watermelon: "Watermelon is a juicy and refreshing fruit, especially popular in hot summers. It typically takes around 70-90 days for watermelon plants to mature and produce fruit.",
+  wheat: "Wheat is a cereal grain widely cultivated for its edible seeds. It comes in different varieties such as hard red spring and soft white. Wheat has a growth period of around 90-120 days and is known for its high protein content, making it a staple food in many regions."
+};
