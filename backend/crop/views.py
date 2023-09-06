@@ -41,8 +41,3 @@ class FormDataView(APIView):
                 "data": predicted_value[0]
                 }
         return Response(predicted_value[0], status=status.HTTP_200_OK)
-
-def aboutus():
-    return HttpResponse("<h1> about us </h1>")
-
-
